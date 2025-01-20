@@ -2,7 +2,6 @@ import {
   Box,
   Divider,
   Drawer,
-  Icon,
   IconButton,
   List,
   ListItem,
@@ -46,7 +45,7 @@ const navItems = [
   { text: "Monthly", icon: <CalendarMonthOutlined /> },
   { text: "Breakdown", icon: <PieChartOutline /> },
   { text: "Management", icon: null },
-  { text: "Admin", icon: <AdminPanelSettingsOutlined /> },
+  { text: "Admins", icon: <AdminPanelSettingsOutlined /> },
   { text: "Performance", icon: <TrendingUpOutlined /> },
 ];
 

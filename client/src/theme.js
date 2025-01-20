@@ -84,6 +84,9 @@ export const themeSettings = (mode) => {
               default: tokensDark.primary[600],
               alt: tokensDark.primary[500],
             },
+            text: {
+              black: "#ffffff",
+            },
           }
         : {
             // palette values for light mode
@@ -104,6 +107,9 @@ export const themeSettings = (mode) => {
             background: {
               default: tokensDark.grey[0],
               alt: tokensDark.grey[50],
+            },
+            text: {
+              black: "#000000",
             },
           }),
     },

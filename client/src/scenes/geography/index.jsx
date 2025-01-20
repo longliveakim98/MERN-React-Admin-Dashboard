@@ -16,10 +16,25 @@ const Geography = () => {
         height="75vh"
         border={`1px solid ${theme.palette.secondary[200]}`}
         borderRadius="4px"
+        background="#000000"
       >
         {data ? (
           <ResponsiveChoropleth
             data={data}
+            colors="RdYlBu"
+            // fillColor={""}
+            // enableGraticule={false}
+            // graticuleLineColor=""
+            // graticuleLineWidth={0}
+            // isInteractive={true}
+            // onMouseEnter={() => {}}
+            // onMouseMove={() => {}}
+            // onMouseLeave={() => {}}
+            // onClick={() => {}}
+            projectionType="mercator"
+            // role=""
+            // match={() => {}}
+            // value={data}
             theme={{
               axis: {
                 domain: { line: { stroke: theme.palette.secondary[200] } },
@@ -37,7 +52,7 @@ const Geography = () => {
               legends: {
                 text: { fill: theme.palette.secondary[200] },
               },
-              tooltip: { container: { color: theme.palette.primary.main } },
+              tooltip: { container: { color: theme.palette.grey[900] } },
             }}
             features={geoData.features}
             margin={{ top: 0, right: 0, bottom: 0, left: 0 }}
